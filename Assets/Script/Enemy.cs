@@ -61,8 +61,12 @@ public class Enemy : MonoBehaviour
         //나를 파괴한다.
         Destroy(gameObject);
 
-        //부딪힌 상대를 파괴한다.
-        Destroy(otherObject.gameObject);
+        if(otherObject.gameObject.tag == "Player")
+        {
+            //부딪힌 상대를 파괴한다.
+            Destroy(otherObject.gameObject);
+        }
+        
     }
 
     //충돌 중 실행

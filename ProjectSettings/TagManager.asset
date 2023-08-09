@@ -5,17 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - DestroyZone
+  - FxTemporaire
+  - Item
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Bullet
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Destroy
+  - EnemyBullet
+  - player
   - 
   - 
   - 

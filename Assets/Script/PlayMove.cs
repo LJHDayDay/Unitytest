@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayMove : MonoBehaviour
@@ -11,6 +12,7 @@ public class PlayMove : MonoBehaviour
     public float speed = 5;
     Vector3 playerPos = new Vector3(0,0,0);
     Vector3 enemyPos = new Vector3(5,5,0);
+    public int hp = 100;
     
 
     // Start is called before the first frame update
@@ -55,5 +57,11 @@ public class PlayMove : MonoBehaviour
 
         }
         //실질적 영역 제한
+
+        
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+
     }
 }

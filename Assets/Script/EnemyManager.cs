@@ -26,8 +26,8 @@ public class EnemyManager : MonoBehaviour
     public GameObject enemy;
 
     //랜덤한 시간의 최소 최댓값
-    public int minTime = 3;
-    public int maxTime = 5;
+    public float minTime = 0;
+    public float maxTime = 10;
 
     private void Start()
     {
